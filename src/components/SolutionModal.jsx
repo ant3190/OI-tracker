@@ -48,9 +48,8 @@ export default function SolutionModal({ solution, imageModules, onClose }) {
 					<div className="flex items-center gap-2">
 						<span className="text-slate-300 uppercase">Difficulty:</span>
 						<div className="flex items-center gap-1.5 ml-1">
-							<div className="w-2.5 h-2.5 rounded-full border-[1.5px] border-solid border-slate-800 bg-slate-800"></div>
 							<span className={`font-mono font-bold text-[11px] ${getRatingColor(solution.difficulty)}`}>
-								{solution.difficulty || '0'}
+								*{solution.difficulty || '0'}
 							</span>
 						</div>
 					</div>
