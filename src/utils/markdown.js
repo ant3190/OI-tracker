@@ -35,8 +35,3 @@ export const parseMarkdown = (fileContent) => {
     return { ...metadata, content };
   } catch (e) { return null; }
 };
-
-export const getRatingColor = (rating) => {
-  // 无论难度数值是多少，都统一返回 Tailwind 的红色类名
-  return 'text-red-600'; 
-};

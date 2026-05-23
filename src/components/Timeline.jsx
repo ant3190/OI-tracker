@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
-import { getRatingColor } from '../utils/markdown';
 
 export default function Timeline({ groups, selectedDate, onDeselectDate, onSelectTask }) {
   return (
@@ -44,7 +43,7 @@ export default function Timeline({ groups, selectedDate, onDeselectDate, onSelec
                     <h4 className="text-xl font-bold text-slate-800 group-hover/item:text-slate-500 transition-colors">
                       {task.title}
                     </h4>
-                    <span className={`text-sm font-bold ${getRatingColor(task.difficulty)} ml-4 font-mono whitespace-nowrap`}>
+                    <span className="text-sm font-bold text-red-600 ml-4 font-mono whitespace-nowrap">
                       *{task.difficulty || '0'}
                     </span>
                   </div>

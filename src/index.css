@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+.list-square {
+    list-style-type: square;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #e2e8f0;
+}
+
+::selection {
+    background-color: #10b981;
+    color: white;
+}
